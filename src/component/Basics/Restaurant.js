@@ -11,7 +11,7 @@ const uniqueList=[...new Set(Menu.map((curElem)=>{
 
 const Restaurant = ()=>
 {
-    const [menuData, setMenuData] = useState(UndefinedMenu);
+    const [menuData, setMenuData] = useState(Menu);
     const [menuList] = useState(uniqueList);
 
     const filterItem = (category) => {
@@ -47,7 +47,7 @@ const Restaurant = ()=>
         menuList={menuList}
         onSearch={handleSearch}
      />
-     <MenuCard menuData={menuData}
+     <MenuCard menuData={menuData} />
      </>
     );
 };
