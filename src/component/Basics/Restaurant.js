@@ -6,10 +6,9 @@ import Navbar from "./Navbar";
 
 const uniqueList=[...new Set(Menu.map((curElem)=>{
     return curElem.category;
-})
-),"All",];
+};
 
-const Restaurant = ()=>
+export const Restaurant = ()=>
 {
     const [menuData, setMenuData] = useState(Menu);
     const [menuList] = useState(uniqueList);
