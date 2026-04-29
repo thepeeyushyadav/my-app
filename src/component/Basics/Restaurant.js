@@ -42,8 +42,8 @@ const Restaurant = ()=>
 
     return (
      <>
-     <Navbar 
-        filterItem={filterItem} 
+     <Navbar
+        filterItem={filterItem}
         menuList={menuList}
         onSearch={handleSearch}
      />
@@ -52,4 +52,3 @@ const Restaurant = ()=>
     );
 };
 
-export default Restaurant;
